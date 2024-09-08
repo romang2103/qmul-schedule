@@ -119,7 +119,7 @@ const HomePage = () => {
 
   return (
     <div className="flex flex-col justify-center items-center h-screen w-screen bg-blue-500 text-white">
-      <div className="flex flex-col justify-center items-center w-2/3 h-screen bg-white text-black p-8">
+      <div className="flex flex-col justify-center items-center sm:w-screen md:w-2/3  h-screen bg-white text-black p-8">
         <h1 className="text-4xl font-bold mb-4">QMUL Schedule Exporter</h1>
         <p className="text-lg mb-6">Easily export your QMUL timetable to your Google Calendar.</p>
 

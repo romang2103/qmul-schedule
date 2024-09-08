@@ -12,10 +12,19 @@ export async function POST(req) {
 
     try {
         // Launch Puppeteer in headless mode
+        // const browser = await puppeteer.launch({
+        //     headless: true,  // Set to false if you want to see the browser window for debugging
+        //     args: ['--no-sandbox', '--disable-setuid-sandbox']
+        // });
+
         const browser = await puppeteer.launch({
-            headless: true,  // Set to false if you want to see the browser window for debugging
-            args: ['--no-sandbox', '--disable-setuid-sandbox']
+            args: chromium.args,
+            defaultViewport: chromium.defaultViewport,
+            executablePath: await chromium.executablePath,
+            headless: true,
         });
+
+        
 
         const page = await browser.newPage();
 
