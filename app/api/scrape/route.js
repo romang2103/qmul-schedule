@@ -1,4 +1,5 @@
 import puppeteer from 'puppeteer';
+import chromium from 'chrome-aws-lambda';
 import { setTimeout } from "node:timers/promises";
 import { NextResponse } from 'next/server';  // Import NextResponse
 
