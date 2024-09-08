@@ -2,7 +2,7 @@ import { google } from 'googleapis';
 import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
 
-export async function POST(req) {
+export async function POST() {
   const cookieStore = cookies();
   const token = cookieStore.get('google_token');
 
